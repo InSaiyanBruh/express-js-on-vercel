@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "npx tailwindcss -i ./src/styles/input.css -o ./public/css/output.css --minify",
+    "build:css": "npx tailwindcss -i ./Public/style.css -o ./Public/output.css --minify",
     "start": "node index.js"
   },
   "keywords": [],
