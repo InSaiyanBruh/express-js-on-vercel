@@ -13,7 +13,7 @@ const https = require('https');
 mongoose.connect("mongodb://localhost:27017/iPhone");
 app.set("view engine", "ejs");
 app.set('views', path.join(__dirname, 'views'));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'Public')));
 
 // Configure session with a long expiration time (e.g., 30 days)
 app.use(session({

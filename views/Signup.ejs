@@ -9,8 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <!-- font link -->
     <link href="https://fonts.cdnfonts.com/css/minimo" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="/output.css">
+    <link rel="stylesheet" href="/stylesheets/globals.css">
+    <link rel="stylesheet" href="/stylesheets/index.css">
     <style>
         /* Full screen overlay */
         #loader-overlay {
@@ -62,13 +63,13 @@
     </div>
     <div class="bg-white flex w-full h-screen">
         <div class="LeftImg w-1/2 h-screen overflow-hidden">
-            <img src="../picsss/pascal-brandle-_c68iz7nRk0-unsplash.jpg" alt="" class="w-full h-screen object-cover">
+            <img src="/picsss/pascal-brandle-_c68iz7nRk0-unsplash.jpg" alt="" class="w-full h-screen object-cover">
         </div>
         <div class="Right w-1/2 pl-10 flex flex-col justify-center items-center">
             <h1 class="text-5xl font-bold">Create Your Account</h1>
             <div class="AlreadyLoggedIn flex gap-2">
                 <p class="font-medium text-lg">Already have an account?</p>
-                <a class="font-bold text-lg hover:underline" href="http://localhost:3000/Login">Login</a>
+                <a class="font-bold text-lg hover:underline" href="/Login">Login</a>
             </div>
             <form action="/signup" method="POST">
             <div class="flex flex-col gap-6 mt-8">

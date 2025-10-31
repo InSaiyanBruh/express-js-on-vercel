@@ -11,8 +11,9 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <!-- font link -->
     <link href="https://fonts.cdnfonts.com/css/minimo" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="/output.css">
+    <link rel="stylesheet" href="/stylesheets/globals.css">
+    <link rel="stylesheet" href="/stylesheets/index.css">
     <script src="https://accounts.google.com/gsi/client" async defer></script>
     <style>
         /* Full screen overlay */
@@ -47,6 +48,7 @@
                 radial-gradient(35% 146% at 50% -59%, var(--c)) 100% 100%;
             background-size: calc(200%/3) 50%;
             background-repeat: repeat-x;
+            mask: repeating-linear-gradient(90deg, #000 0 10%, #0000 0 20%);
             -webkit-mask: repeating-linear-gradient(90deg, #000 0 10%, #0000 0 20%);
             animation: l12 .8s infinite linear;
         }
@@ -67,7 +69,7 @@
 
     <div class="bg-white flex w-full h-screen">
         <div class="LeftImg w-1/2 h-screen overflow-hidden">
-            <img src="../picsss/pascal-brandle-_c68iz7nRk0-unsplash.jpg" alt="" class="w-full h-screen object-cover">
+            <img src="/picsss/pascal-brandle-_c68iz7nRk0-unsplash.jpg" alt="" class="w-full h-screen object-cover">
         </div>
         <div class="Right w-1/2 flex flex-col justify-center items-center">
             <div class="Login relative text-center mb-5">
@@ -77,7 +79,7 @@
             <div class="flex justify-center">
                 <button  data-onsuccess="onSignIn"
                     class="GoogleLogin bg-gray-950 flex gap-2 relative justify-center cursor-pointer p-2 w-80 rounded-[5px] hover:bg-gray-500 text-white hover:text-black">
-                    <img class="w-[25px]" src="../picsss/Google_Favicon_2025.svg" alt="">
+                    <img class="w-[25px]" src="/picsss/Google_Favicon_2025.svg" alt="">
 
                     <h1 class="font-bold">Login with Google</h1>
                 </button>
@@ -103,7 +105,7 @@
             <p class="font-bold cursor-pointer text-l mt-5 hover:underline">Forgot password?</p>
             <div class="flex gap-1 mt-1">
                 <p class="font-medium text-l">Don't have an account?</p>
-                <a class="font-bold text-l cursor-pointer underline" href="http://localhost:3000/Signup">Sign up</a>
+                <a class="font-bold text-l cursor-pointer underline" href="/Signup">Sign up</a>
             </div>
         </div>
     </div>
