@@ -1,0 +1,16 @@
+{
+  "builds": [
+    { "src": "index.js", "use": "@vercel/node" }
+  ],
+  "functions": {
+    "index.js": {
+      "excludeFiles": "{Public,public}/**"
+    }
+  },
+  "routes": [
+    { "src": "/(pics|picsss|stylesheets|styles|script|Data)/(.*)", "dest": "/Public/$1/$2" },
+    { "src": "/(Display|Battery)\\.mp4", "dest": "/Public/$1.mp4" },
+    { "src": "/(output|style)\\.css", "dest": "/Public/$1.css" },
+    { "src": "/(.*)", "dest": "/index.js" }
+  ]
+}
