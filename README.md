@@ -1,31 +1,27 @@
-# Express.js on Vercel
+READ THE FUCKING DOCUMENTATION/README file!!!!
 
-Basic Express.js + Vercel example that serves html content, JSON data and simulates an api route.
+place images from the picsss folder in public (seperated with pictures named folder) :)
 
-## How to Use
+libs:
+bcrypt, argon2 (best hashing algorithm), ejs, express, mongoose, JWT, remixicon, cors
 
-You can choose from one of the following two methods to use this repository:
+to run this:
+npx nodemon index.js
 
-### One-Click Deploy
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
+to install tailwindcss cli:
+npm install tailwindcss @tailwindcss/cli
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/examples/tree/main/solutions/express&project-name=express&repository-name=express)
+in style.css:
 
-### Clone and Deploy
+@import "tailwindcss";
 
-```bash
-git clone https://github.com/vercel/examples/tree/main/solutions/express
-```
+*{
+    margin: 0;
+    padding: 0;
+} 
 
-Install the Vercel CLI:
+and to run tailwind cli:
+npx @tailwindcss/cli -i ./public/style.css -o ./public/output.css --watch
 
-```bash
-npm i -g vercel
-```
-
-Then run the app at the root of the repository:
-
-```bash
-vercel dev
-```
+it will create output.css in the public folder
